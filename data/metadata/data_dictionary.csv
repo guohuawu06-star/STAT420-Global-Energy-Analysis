@@ -1,0 +1,8 @@
+indicator_id,title,unit,source,description
+total_energy_twh,Total energy supply,TWh,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Annual total energy supply in terawatt-hours.
+coal_energy_share_pct,Coal as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to coal.
+oil_energy_share_pct,Oil as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to oil.
+gas_energy_share_pct,Natural gas as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to natural gas.
+renewables_energy_share_pct,Renewables as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to renewables.
+fossil_fuels_energy_share_pct,Fossil fuels as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to fossil fuels.
+nuclear_energy_share_pct,Nuclear as a share of total energy supply,%,OWID Energy dataset (2026-09-10); upstream sources listed in docs/DATA_AND_DATABASE.md,Percentage of total energy supply attributed to nuclear.

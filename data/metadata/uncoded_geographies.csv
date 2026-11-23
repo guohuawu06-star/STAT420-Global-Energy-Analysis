@@ -1,0 +1,41 @@
+name,geography_type
+ASEAN (Ember),aggregate
+Africa,aggregate
+Africa (EI),aggregate
+Africa (Ember),aggregate
+Asia,aggregate
+Asia (Ember),aggregate
+Asia Pacific (EI),aggregate
+CIS (EI),aggregate
+Czechoslovakia,historical
+EU (Ember),aggregate
+East Germany,historical
+Europe,aggregate
+Europe (EI),aggregate
+Europe (Ember),aggregate
+European Union (27),aggregate
+G20 (Ember),aggregate
+G7 (Ember),aggregate
+High-income countries,aggregate
+Kosovo,uncoded_entity
+Latin America and Caribbean (Ember),aggregate
+Low-income countries,aggregate
+Lower-middle-income countries,aggregate
+Middle East (EI),aggregate
+Middle East (Ember),aggregate
+North America,aggregate
+North America (EI),aggregate
+North America (Ember),aggregate
+OECD (EI),aggregate
+OECD (Ember),aggregate
+OPEC (EI),aggregate
+Oceania,aggregate
+Oceania (Ember),aggregate
+Serbia and Montenegro,historical
+South America,aggregate
+South and Central America (EI),aggregate
+USSR,historical
+Upper-middle-income countries,aggregate
+West Germany,historical
+World,world
+Yugoslavia,historical

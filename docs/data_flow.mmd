@@ -1,0 +1,7 @@
+flowchart LR
+    A[Fixed OWID CSV] --> B[Verify checksum and profile]
+    B --> C[Validate and reshape seven indicators]
+    C --> D[Load four PostgreSQL tables]
+    D --> E[Export three SQL queries]
+    E --> F[Summarize comparable years and fit OLS]
+    F --> G[Figures and result tables]

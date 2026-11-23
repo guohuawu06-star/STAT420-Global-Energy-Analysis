@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres@sha256:0d938e975177bef9f1f61f3f9dbcf2e0aa0a139568f66d3415ed8892eb97f6ac
+    environment:
+      POSTGRES_USER: stat420
+      POSTGRES_DB: stat420_energy
+      POSTGRES_PASSWORD: ${STAT420_DB_PASSWORD:?Set STAT420_DB_PASSWORD locally}
+    ports:
+      - "127.0.0.1:55420:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-h", "127.0.0.1", "-U", "stat420", "-d", "stat420_energy"]
+      interval: 2s
+      timeout: 3s
+      retries: 30

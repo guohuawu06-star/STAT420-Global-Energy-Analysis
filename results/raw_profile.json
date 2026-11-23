@@ -1,0 +1,11 @@
+{
+  "raw_rows": 19494,
+  "raw_columns": 130,
+  "first_year": 1700,
+  "last_year": 2025,
+  "geographies": 260,
+  "iso_coded": 220,
+  "exact_duplicates": 0,
+  "duplicate_geography_year": 0,
+  "missing_keys": 0
+}

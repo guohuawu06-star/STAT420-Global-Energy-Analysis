@@ -1,0 +1,28 @@
+erDiagram
+    source_release ||--o{ energy_observation : identifies
+    geography ||--o{ energy_observation : locates
+    indicator ||--o{ energy_observation : defines
+    source_release {
+      text release_id PK
+      text version
+      date retrieval_date
+      text sha256
+    }
+    geography {
+      text geo_id PK
+      text iso_code UK
+      text geography_type
+    }
+    indicator {
+      text indicator_id PK
+      text energy_category
+      text unit
+      text accounting_method
+    }
+    energy_observation {
+      text release_id PK,FK
+      text geo_id PK,FK
+      integer year PK
+      text indicator_id PK,FK
+      numeric value "Nullable"
+    }

@@ -1,0 +1,13 @@
+# Appendix and Reproducibility
+
+[STAT420-Global-Energy-Analysis on GitHub](https://github.com/guohuawu06-star/STAT420-Global-Energy-Analysis)
+
+- **Inputs.** The data pipeline downloads the September 10, 2026 OWID Energy CSV and checks its SHA-256 hash. The Energy Institute's 2026 *Statistical Review* is an upstream source. The OWID historical article provides context. The [data guide](DATA_AND_DATABASE.md) identifies the sources, data definitions, and transformations.
+- **Curation and storage.** Python profiles the CSV for coverage, duplicates, and missing values, validates keys and units, and reshapes seven indicators into four PostgreSQL tables: `source_release`, `geography`, `indicator`, and `energy_observation`. SQL queries export world, country, and coverage series.
+- **Analysis.** The Python and notebook workflows produce descriptive statistics, global and country comparisons, and an OLS trend with residual diagnostics for the global renewable share. The analysis uses the fully covered 2000–2025 window for the World, China, India, Germany, and the United States.
+- **Reproduction.** Clone the repository, create a Python 3.11 virtual environment, and run `python -m pip install -r requirements.txt`. Follow the [README](../README.md#reproduce-the-analysis) to start PostgreSQL and run `python -m src.run_pipeline --db postgres`. Run `python -m unittest discover -s tests -v` and `python -m src.build_notebook`. Figures and statistical summaries are regenerated in `figures/` and `results/`.
+- **Limitations.** Indicator coverage varies across geographies and years. The four selected countries are a purposive comparison. Total energy supply follows the definitions of the pinned OWID release, and the project uses no standalone EI merge. Serially correlated residuals limit statistical inference. The model summarizes observed years and has no out-of-sample evaluation.
+
+## Text for Section 12
+
+The project's reproducibility materials are available at https://github.com/guohuawu06-star/STAT420-Global-Energy-Analysis. The repository contains Python scripts, a data dictionary, a four-table PostgreSQL schema, example SQL queries, a notebook, validation tests, and the figures and statistical summaries used to examine changes in total energy supply. The workflow verifies a fixed September 10, 2026 Our World in Data release, documents how missing values and zeros are handled, and reproduces the 2000–2025 global and selected-country comparisons and the descriptive regression of the world renewable energy share. The README provides installation and execution instructions, and the data guide documents source attribution, coverage, and measurement definitions.

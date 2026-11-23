@@ -1,0 +1,19 @@
+{
+  "engine": "PostgreSQL 17.12 (Debian 17.12-1.pgdg13+1)",
+  "tables": {
+    "source_release": 1,
+    "geography": 260,
+    "indicator": 7,
+    "energy_observation": 136458
+  },
+  "present": 50406,
+  "missing": 86052,
+  "zeros": 9596,
+  "duplicate_keys": 0,
+  "foreign_keys_enforced": true,
+  "queries": {
+    "world_series": 952,
+    "annual_coverage": 4585,
+    "countries_series": 3528
+  }
+}

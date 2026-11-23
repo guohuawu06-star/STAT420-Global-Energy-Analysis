@@ -1,0 +1,2 @@
+geography,indicator,response_unit,slope_unit,first_year,last_year,n,intercept,slope,r_squared,rmse,durbin_watson,lag1,largest_residual_year,largest_residual
+World,renewables_energy_share_pct,%,percentage points/year,2000,2025,26,2.660273949305214,0.20914891952123413,0.9523613132286884,0.3508293401546479,0.18925784326656192,0.8830681503485126,2000,0.8565610249837263
