@@ -1,0 +1,64 @@
+{
+  "geography": {
+    "iso_coded_locations": 220,
+    "matched_map_locations": 213,
+    "unmatched_map_codes": [
+      "ANT",
+      "GIB",
+      "GLP",
+      "GUF",
+      "MTQ",
+      "REU",
+      "TUV"
+    ],
+    "coverage_check_years": [
+      {
+        "year": 1965,
+        "source_row": 102,
+        "total_reported": 65,
+        "renewable_reported": 65,
+        "total_missing": 37,
+        "outside_source_grid": 118
+      },
+      {
+        "year": 2000,
+        "source_row": 216,
+        "total_reported": 214,
+        "renewable_reported": 79,
+        "total_missing": 2,
+        "outside_source_grid": 4
+      },
+      {
+        "year": 2024,
+        "source_row": 220,
+        "total_reported": 218,
+        "renewable_reported": 79,
+        "total_missing": 2,
+        "outside_source_grid": 0
+      },
+      {
+        "year": 2025,
+        "source_row": 126,
+        "total_reported": 79,
+        "renewable_reported": 79,
+        "total_missing": 47,
+        "outside_source_grid": 94
+      }
+    ],
+    "map_first_year": 1965,
+    "map_last_year": 2024,
+    "map_frames_per_animation": 60
+  },
+  "history": {
+    "source_world_rows": 136,
+    "observed_years": 78,
+    "max_abs_renewable_component_gap_twh": 0.00048828125,
+    "largest_total_difference_year": 2022,
+    "component_minus_total_twh": 126.392333984375,
+    "relative_difference_pct": 0.08002616297791836
+  },
+  "world_published_fossil_twh": {
+    "2000": 94434.0,
+    "2025": 143805.6875
+  }
+}

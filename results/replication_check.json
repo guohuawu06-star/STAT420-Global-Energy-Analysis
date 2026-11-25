@@ -1,0 +1,84 @@
+{
+  "source_sha256": "238177564d56b21fd40caaf9572ad8f8382421899462c68952294fcce4f2eea9",
+  "postgresql": {
+    "engine": "PostgreSQL 17.12 (Debian 17.12-1.pgdg13+1)",
+    "tables": {
+      "source_release": 1,
+      "geography": 260,
+      "indicator": 7,
+      "energy_observation": 136458
+    },
+    "present": 50406,
+    "missing": 86052,
+    "zeros": 9596,
+    "duplicate_keys": 0,
+    "foreign_keys_enforced": true,
+    "queries": {
+      "world_series": 952,
+      "annual_coverage": 4585,
+      "countries_series": 3528
+    }
+  },
+  "postgresql_restore": {
+    "status": "restored successfully",
+    "table": "stat420_energy.energy_observation",
+    "rows": 136458
+  },
+  "sqlite": {
+    "engine": "SQLite 3.45.1",
+    "tables": {
+      "source_release": 1,
+      "geography": 260,
+      "indicator": 7,
+      "energy_observation": 136458
+    },
+    "present": 50406,
+    "missing": 86052,
+    "zeros": 9596,
+    "duplicate_keys": 0,
+    "foreign_keys_enforced": true,
+    "queries": {
+      "world_series": 952,
+      "annual_coverage": 4585,
+      "countries_series": 3528
+    }
+  },
+  "byte_identical_exports": {
+    "world_series.csv": {
+      "rows": 952,
+      "sha256": "971f55c8a992539709778765182a53a8b3ac17db613201d56c583f6acf254f0f"
+    },
+    "countries_series.csv": {
+      "rows": 3528,
+      "sha256": "4212c230bd317d538b1a7d8695455bcda4a42ddd04ebcf63f1581b5d0175d226"
+    },
+    "annual_coverage.csv": {
+      "rows": 4585,
+      "sha256": "6218fa6a5191247c6a9bc5800c63c5cd5356340b813398aa7d31207d33ca77b8"
+    },
+    "analysis_panel.csv": {
+      "rows": 910,
+      "sha256": "5cffe68e88578a29d1c0559e2589deb6d051f49cabbb0263133681fb1619b00d"
+    },
+    "descriptive_statistics.csv": {
+      "rows": 35,
+      "sha256": "98b14046c6d06975b574604c4bf0f2e8f98547c7a9723f10e5d805549998abdb"
+    },
+    "endpoints.csv": {
+      "rows": 35,
+      "sha256": "4b9b057e9b809479c75d41694f857ed4dda7bec11c2e8ad08b980abccab379ad"
+    },
+    "model_diagnostics.csv": {
+      "rows": 26,
+      "sha256": "4019b813e460104ddcd6369e2017ed5eadb58f8ea2332d64a359f8aaced9c291"
+    },
+    "model_statistics.csv": {
+      "rows": 1,
+      "sha256": "c11088d60f3c9bb6a2a7905fad238ac87ee7e97096bb8f8e1e43d67aec4c5786"
+    },
+    "data_quality_summary.csv": {
+      "rows": 7,
+      "sha256": "1f0207260b84d95989ef2f4304f534e0f587202bc6597991de152864aca52061"
+    }
+  }
+}

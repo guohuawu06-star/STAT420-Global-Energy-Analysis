@@ -8,6 +8,7 @@ pg_service.conf
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+output/
 data/raw/
 data/processed/
 data/metadata/provenance.json
@@ -20,6 +21,9 @@ results/*
 !results/model_statistics.csv
 !results/model_diagnostics.csv
 !results/endpoints.csv
+!results/replication_check.json
+!results/geographic_coverage.csv
+!results/extension_verification.json
 *.sqlite3
 *.dump
 *.docx

@@ -1,4 +1,4 @@
-# Changes in Global Energy
+# Changes in Global Energy Supply and Source Shares
 
 STAT 420 · Data Curation and Management · San Diego State University
 Instructor: Ryan Paul Lafler
@@ -48,7 +48,17 @@ python -m unittest discover -s tests -v
 python -m src.build_notebook
 ```
 
-For an analysis-only reproduction without PostgreSQL, run `python -m src.run_pipeline --db sqlite` before the tests. It writes its own database and regenerates the result files using SQLite. The published database evidence comes from PostgreSQL.
+For reproduction with SQLite, run `python -m src.run_pipeline --db sqlite` before the tests. PostgreSQL and SQLite write to the same paths in a checkout. Use separate checkouts to keep both runs intact. The checked-in [database run](results/database_run.json) and [restore check](results/postgres_restore_check.json) are from PostgreSQL. The [replication check](results/replication_check.json) records the independent comparison of both runs.
+
+### Extended notebook and HTML
+
+After the pipeline, open [Completed Analysis](notebooks/Completed_Analysis.ipynb) from the repository root or the `notebooks` directory with the same Python 3.11 environment. It uses the selected engine's existing outputs. To execute it in a fresh kernel and export both the executed notebook and HTML, run:
+
+```sh
+python -m src.export_completed_notebook output
+```
+
+Open `output/Completed_Analysis.html` in a browser. Interactive figures use the Plotly CDN, and maps also request the Plotly Natural Earth basemap. The notebook embeds static coverage and historical charts for offline reading. The [extension guide](docs/EXTENDED_ANALYSIS.md) defines the map codes, reporting statuses, and historical component checks.
 
 ## Verified results
 
@@ -70,12 +80,6 @@ A simple OLS trend on 26 annual observations estimated an increase of **0.209 pe
 - [Results](results/) contains compact verification and analysis summaries. [Tests](tests/) reconcile source and database counts and recompute the regression independently.
 - The [report appendix](docs/APPENDIX_REPRODUCIBILITY.md) lists the steps and limitations for the written draft.
 
-## Team responsibilities
+## Team contributions
 
-| Team member | Documented role |
-| --- | --- |
-| Kevin Schwartz | Project leader and coordination |
-| Mariana Khoshaba | Data acquisition, organization, cleaning, and initial exploratory review |
-| Jason Wu | Statistical analysis, visualization, and interpretation |
-
-The team shares responsibility for data review, analysis discussions, writing, presentation, and final review.
+Kevin Schwartz coordinated milestones, prepared the working outline, reviewed the report, and shared an early Colab import. Mariana Khoshaba consolidated the existing code, added the geographic and historical visualizations, and revised the report. Jason Wu prepared earlier draft materials, created this repository, and organized the workflow and its reproduction instructions. The team presented the proposal together. OpenAI tools assisted with code and report review and revision.
